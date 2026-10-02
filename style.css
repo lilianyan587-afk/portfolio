@@ -1,5 +1,6 @@
+```css
 /* =====================================================
-                    GLOBAL
+   GLOBAL
 ===================================================== */
 
 * {
@@ -13,28 +14,25 @@ html {
 }
 
 :root {
-    --green: #00BFFF;
-    --dark-green: #0077B6;
-    --light-green: #E6F9FF;
+    --blue: #149ddd;
+    --dark-blue: #0f7fb8;
+    --light-blue: #eaf7fd;
 
-    --black: #0B1F33;
-    --gray: #5B7083;
-    --white: #FFFFFF;
+    --black: #272829;
+    --gray: #6f6f6f;
+    --white: #ffffff;
 
-    --background: #F4FCFF;
-    --border: #B8E9FA;
+    --background: #ffffff;
+    --border: #eeeeee;
+
+    --shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
 }
 
 body {
-
     font-family: "Poppins", sans-serif;
-
     color: var(--black);
-
     background: var(--background);
-
     line-height: 1.7;
-
 }
 
 a {
@@ -50,210 +48,145 @@ textarea {
 
 
 /* =====================================================
-                    HEADER
+   HEADER
 ===================================================== */
 
 .header {
-
     position: fixed;
-
-    left: 0;
     top: 0;
+    left: 0;
 
     width: 100%;
-
     height: 75px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     padding: 0 8%;
 
-    background: rgba(2, 217, 254, 0.95);
-
+    background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(12px);
 
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid #eee;
 
     z-index: 999;
-    background-color: #EAF6FC;
-
 }
-
 
 .logo {
-
     font-size: 25px;
-
     font-weight: 800;
-
     letter-spacing: -2px;
-
 }
 
-
-.logo span,
-.footer-logo span {
-
-    color: var(--green);
-
+.logo span {
+    color: var(--blue);
 }
-
 
 .navbar {
-
     display: flex;
-
+    align-items: center;
     gap: 28px;
-
 }
-
 
 .nav-link {
-
     display: flex;
-
     align-items: center;
-
     gap: 7px;
 
-    color: var(--gray);
-
+    color: #555;
     font-size: 13px;
-
     font-weight: 500;
 
-    transition: .3s;
-
+    transition: 0.3s;
 }
-
 
 .nav-link i {
-
     font-size: 12px;
-
 }
-
 
 .nav-link:hover,
 .nav-link.active {
-
-    color: var(--green);
-
+    color: var(--blue);
 }
 
-
 .menu-btn {
-
     display: none;
 
     border: 0;
-
     background: transparent;
 
     font-size: 23px;
-
     cursor: pointer;
-
 }
 
 
 /* =====================================================
-                    GENERAL SECTION
+   GENERAL SECTION
 ===================================================== */
 
 .section {
-
     padding: 110px 9%;
-
 }
-
 
 .section-heading {
-
     text-align: center;
-
     margin-bottom: 60px;
-
 }
 
-
 .section-heading p {
-
-    color: var(--green);
+    color: var(--blue);
 
     font-size: 12px;
-
     font-weight: 700;
 
     letter-spacing: 3px;
-
 }
-
 
 .section-heading h2 {
-
     font-size: 42px;
-
     margin-top: 5px;
-
 }
 
-
 .line {
-
     display: block;
 
     width: 45px;
-
     height: 3px;
 
     margin: 15px auto 0;
 
-    background: var(--green);
-
+    background: var(--blue);
 }
 
 
 /* =====================================================
-                    HERO
+   HERO
 ===================================================== */
 
 .hero {
-
     min-height: 100vh;
 
     padding: 130px 10% 80px;
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
 
     align-items: center;
 
     gap: 70px;
-
 }
 
-
 .hello {
-
-    color: var(--green);
+    color: var(--blue);
 
     font-size: 13px;
-
     font-weight: 700;
 
     letter-spacing: 3px;
-
 }
 
-
 .hero h1 {
-
     font-size: clamp(45px, 6vw, 75px);
 
     line-height: 1.1;
@@ -261,130 +194,87 @@ textarea {
     margin: 10px 0;
 
     letter-spacing: -3px;
-
 }
 
-
 .hero h2 {
-
     font-size: 24px;
-
     font-weight: 500;
 
     margin-bottom: 20px;
-
 }
-
 
 .typing {
-
-    color: var(--green);
-
+    color: var(--blue);
 }
-
 
 .hero-description {
-
     max-width: 600px;
 
-    color:white;
+    color: var(--gray);
 
     font-size: 15px;
-
 }
 
-
 .hero-buttons {
-
     display: flex;
-
     gap: 12px;
 
     margin-top: 30px;
-
 }
 
-
 .btn {
-
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 8px;
 
     padding: 12px 21px;
 
-    border-radius: 6px;
+    border-radius: 4px;
 
     font-size: 13px;
-
     font-weight: 600;
 
     border: 1px solid transparent;
 
-    transition: .3s;
-
+    transition: 0.3s;
 }
-
 
 .primary {
-
-    background: var(--green);
-
+    background: var(--blue);
     color: white;
-
 }
-
 
 .primary:hover {
-
-    background: var(--dark-green);
-
+    background: var(--dark-blue);
     transform: translateY(-3px);
-
 }
-
 
 .secondary {
-
     background: white;
-
     border-color: var(--border);
-
 }
-
 
 .secondary:hover {
-
-    border-color: var(--green);
-
-    color: var(--green);
-
+    border-color: var(--blue);
+    color: var(--blue);
 }
 
-
 .social-links {
-
     display: flex;
 
     gap: 10px;
 
     margin-top: 25px;
-
 }
 
-
 .social-links a {
-
     width: 38px;
-
     height: 38px;
 
     display: grid;
-
     place-items: center;
 
     background: white;
@@ -393,45 +283,34 @@ textarea {
 
     border-radius: 50%;
 
-    color: var(--green);
+    color: var(--blue);
 
-    transition: .3s;
-
+    transition: 0.3s;
 }
 
-
 .social-links a:hover {
-
-    background: var(--green);
-
+    background: var(--blue);
     color: white;
 
     transform: translateY(-4px);
-
 }
 
 
 /* =====================================================
-                    HERO IMAGE
+   HERO IMAGE
 ===================================================== */
 
 .hero-image {
-
     position: relative;
 
     width: 390px;
-
     height: 470px;
 
     justify-self: center;
-
 }
 
-
 .hero-image img {
-
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
@@ -445,39 +324,30 @@ textarea {
     z-index: 2;
 
     box-shadow: var(--shadow);
-
 }
 
-
 .circle {
-
     position: absolute;
 
     width: 100%;
-
     height: 100%;
 
     top: -20px;
-
     left: -20px;
 
-    border: 2px solid var(--green);
+    border: 2px solid var(--blue);
 
     border-radius: 200px 200px 25px 25px;
 
     transform: rotate(-5deg);
-
 }
 
-
 .floating-card {
-
     position: absolute;
 
     z-index: 4;
 
     bottom: 25px;
-
     right: -35px;
 
     background: white;
@@ -493,56 +363,37 @@ textarea {
     gap: 12px;
 
     box-shadow: var(--shadow);
-
 }
-
 
 .floating-card i {
-
-    color: var(--green);
-
+    color: var(--blue);
     font-size: 22px;
-
 }
-
 
 .floating-card strong,
 .floating-card small {
-
     display: block;
-
 }
-
 
 .floating-card strong {
-
     font-size: 13px;
-
 }
 
-
 .floating-card small {
-
     color: var(--gray);
-
     font-size: 10px;
-
 }
 
 
 /* =====================================================
-                    ABOUT
+   ABOUT
 ===================================================== */
 
 .about {
-
-    background: white;
-
+    background: #ffffff;
 }
 
-
 .about-container {
-
     max-width: 1100px;
 
     margin: auto;
@@ -554,14 +405,10 @@ textarea {
     gap: 70px;
 
     align-items: center;
-
 }
 
-
 .about-image img {
-
     width: 100%;
-
     height: 430px;
 
     object-fit: cover;
@@ -569,40 +416,26 @@ textarea {
     border-radius: 10px;
 
     box-shadow: var(--shadow);
-
 }
-
 
 .about-content h3 {
-
     font-size: 27px;
-
     margin-bottom: 15px;
-
 }
 
-
 .about-content p {
-
     color: var(--gray);
 
     margin-bottom: 15px;
 
     font-size: 14px;
-
 }
-
 
 .about-intro {
-
     font-weight: 500;
-    
-
 }
 
-
 .personal-info {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
@@ -610,41 +443,30 @@ textarea {
     gap: 12px 30px;
 
     margin-top: 25px;
-
 }
 
-
 .personal-info div {
-
     display: flex;
 
     gap: 7px;
 
     font-size: 13px;
-
 }
-
 
 .personal-info strong {
-
     color: var(--black);
-
 }
 
-
 .personal-info span {
-
     color: var(--gray);
-
 }
 
 
 /* =====================================================
-                    STATS
+   STATS
 ===================================================== */
 
 .stats {
-
     max-width: 1100px;
 
     margin: 70px auto 0;
@@ -654,12 +476,9 @@ textarea {
     grid-template-columns: repeat(4, 1fr);
 
     gap: 20px;
-
 }
 
-
 .stat-box {
-
     text-align: center;
 
     padding: 25px;
@@ -668,60 +487,43 @@ textarea {
 
     border-radius: 10px;
 
-    transition: .3s;
-
+    transition: 0.3s;
 }
 
-
 .stat-box:hover {
-
     transform: translateY(-5px);
 
     box-shadow: var(--shadow);
-
 }
-
 
 .stat-box i {
-
-    color: var(--green);
+    color: var(--blue);
 
     font-size: 23px;
-
 }
 
-
 .stat-box h3 {
-
     font-size: 27px;
 
     margin: 5px 0;
-
 }
 
-
 .stat-box p {
-
     color: var(--gray);
 
     font-size: 12px;
-
 }
 
 
 /* =====================================================
-                    SKILLS
+   SKILLS
 ===================================================== */
 
 .skills {
-
-    background: var(--background);
-    background-color:rgba(224, 217, 217, 0.247);
+    background: #f8f9fa;
 }
 
-
 .skills-container {
-
     max-width: 1000px;
 
     margin: auto;
@@ -729,15 +531,11 @@ textarea {
     display: grid;
 
     grid-template-columns: 1fr 1fr;
-    background:none;
-    gap: 30px 60px;
-  
 
+    gap: 30px 60px;
 }
 
-
 .skill-header {
-
     display: flex;
 
     justify-content: space-between;
@@ -745,58 +543,43 @@ textarea {
     font-size: 13px;
 
     font-weight: 600;
-
 }
-
 
 .skill-header span:last-child {
-
-    color: var(--green);
-
+    color: var(--blue);
 }
 
-
 .progress {
-
     width: 100%;
 
     height: 7px;
 
-    background: #e5e9e3;
+    background: #e9e9e9;
 
     border-radius: 10px;
 
     margin-top: 8px;
 
     overflow: hidden;
-
 }
-
 
 .progress-bar {
-
     height: 100%;
 
-    background: var(--green);
+    background: var(--blue);
 
     border-radius: 10px;
-
 }
 
-
 .fun-title {
-
     text-align: center;
 
     margin: 80px 0 30px;
 
     font-size: 23px;
-
 }
 
-
 .fun-skills {
-
     max-width: 1100px;
 
     margin: auto;
@@ -806,12 +589,9 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
 
     gap: 20px;
-
 }
 
-
 .fun-card {
-
     background: white;
 
     padding: 30px;
@@ -822,62 +602,45 @@ textarea {
 
     text-align: center;
 
-    transition: .3s;
-
+    transition: 0.3s;
 }
 
-
 .fun-card:hover {
-
     transform: translateY(-7px);
 
     box-shadow: var(--shadow);
-
 }
-
 
 .fun-card i {
-
     font-size: 28px;
 
-    color: var(--green);
+    color: var(--blue);
 
     margin-bottom: 15px;
-
 }
 
-
 .fun-card h3 {
-
     font-size: 16px;
 
     margin-bottom: 8px;
-
 }
 
-
 .fun-card p {
-
     color: var(--gray);
 
     font-size: 12px;
-
 }
 
 
 /* =====================================================
-                    RESUME
+   RESUME
 ===================================================== */
 
 .resume {
-
     background: white;
-
 }
 
-
 .resume-container {
-
     max-width: 1000px;
 
     margin: auto;
@@ -887,62 +650,48 @@ textarea {
     grid-template-columns: 1fr 1fr;
 
     gap: 60px;
-
 }
 
-
 .resume-title {
-
     font-size: 23px;
 
     margin-bottom: 25px;
 
-    color: var(--dark-green);
-
+    color: var(--dark-blue);
 }
 
-
 .resume-item {
-
-    border-left: 2px solid var(--green);
+    border-left: 2px solid var(--blue);
 
     padding-left: 25px;
 
     margin-bottom: 40px;
 
     position: relative;
-
 }
 
-
 .resume-item::before {
-
     content: "";
 
     position: absolute;
 
     width: 10px;
-
     height: 10px;
 
     border-radius: 50%;
 
-    background: var(--green);
+    background: var(--blue);
 
     left: -6px;
-
     top: 5px;
-
 }
 
-
 .resume-year {
-
     display: inline-block;
 
-    background: var(--light-green);
+    background: var(--light-blue);
 
-    color: var(--dark-green);
+    color: var(--dark-blue);
 
     padding: 4px 10px;
 
@@ -951,45 +700,38 @@ textarea {
     font-size: 10px;
 
     font-weight: 700;
-
 }
 
-
 .resume-item h3 {
-
     margin-top: 10px;
 
     font-size: 17px;
-
 }
 
-
 .resume-item h4 {
-
-    color: var(--green);
+    color: var(--blue);
 
     font-size: 13px;
 
     margin: 4px 0;
-
 }
 
-
 .resume-item p {
-
     color: var(--gray);
 
     font-size: 13px;
-
 }
 
 
 /* =====================================================
-                    PORTFOLIO
+   PORTFOLIO
 ===================================================== */
 
-.portfolio-filter {
+.portfolio {
+    background: #f8f9fa;
+}
 
+.portfolio-filter {
     display: flex;
 
     justify-content: center;
@@ -997,17 +739,14 @@ textarea {
     gap: 10px;
 
     margin-bottom: 35px;
-
 }
 
-
 .filter-btn {
-
     border: none;
 
     background: transparent;
 
-    color: white;
+    color: #555;
 
     padding: 8px 18px;
 
@@ -1017,21 +756,17 @@ textarea {
 
     border-radius: 20px;
 
+    transition: 0.3s;
 }
-
 
 .filter-btn.active,
 .filter-btn:hover {
-
-    background: var(--green);
+    background: var(--blue);
 
     color: white;
-
 }
 
-
 .portfolio-grid {
-
     max-width: 1100px;
 
     margin: auto;
@@ -1041,12 +776,9 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
 
     gap: 20px;
-
 }
 
-
 .portfolio-image {
-
     height: 250px;
 
     position: relative;
@@ -1054,34 +786,28 @@ textarea {
     overflow: hidden;
 
     border-radius: 10px;
-
 }
 
-
 .project-placeholder {
-
     height: 100%;
 
     display: grid;
 
     place-items: center;
 
-    background: var(--light-green);
+    background: var(--light-blue);
 
-    color: var(--green);
+    color: var(--blue);
 
     font-size: 50px;
-
 }
 
-
 .portfolio-overlay {
-
     position: absolute;
 
     inset: 0;
 
-    background: rgba(69, 103, 56, .92);
+    background: rgba(20, 157, 221, 0.92);
 
     color: white;
 
@@ -1095,45 +821,31 @@ textarea {
 
     opacity: 0;
 
-    transition: .3s;
-
+    transition: 0.3s;
 }
-
 
 .portfolio-image:hover .portfolio-overlay {
-
     opacity: 1;
-
 }
-
 
 .portfolio-overlay h3 {
-
     font-size: 17px;
-
 }
 
-
 .portfolio-overlay p {
-
     font-size: 12px;
-
 }
 
 
 /* =====================================================
-                    SERVICES
+   SERVICES
 ===================================================== */
 
 .services {
-
     background: white;
-
 }
 
-
 .services-grid {
-
     max-width: 1100px;
 
     margin: auto;
@@ -1143,12 +855,9 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
 
     gap: 20px;
-
 }
 
-
 .service-card {
-
     padding: 35px 25px;
 
     text-align: center;
@@ -1157,136 +866,99 @@ textarea {
 
     border-radius: 10px;
 
-    transition: .3s;
-
+    transition: 0.3s;
 }
 
-
 .service-card:hover {
-
     transform: translateY(-7px);
 
     box-shadow: var(--shadow);
-
 }
-
 
 .service-card i {
-
     font-size: 30px;
 
-    color: var(--green);
+    color: var(--blue);
 
     margin-bottom: 15px;
-
 }
 
-
 .service-card h3 {
-
     font-size: 16px;
 
     margin-bottom: 10px;
-
 }
 
-
 .service-card p {
-
     color: var(--gray);
 
     font-size: 12px;
-
 }
 
 
 /* =====================================================
-                    CONTACT
+   CONTACT
 ===================================================== */
 
 .contact {
-
-    background: var(--background);
-
+    background: #f8f9fa;
 }
 
-
 .contact-container {
-
     max-width: 1100px;
 
     margin: auto;
 
     display: grid;
 
-    grid-template-columns: .8fr 1.2fr;
+    grid-template-columns: 0.8fr 1.2fr;
 
     gap: 70px;
-
 }
 
-
 .contact-box {
-
     display: flex;
 
     gap: 20px;
 
     margin-bottom: 30px;
-
 }
 
-
 .contact-box > i {
-
     width: 45px;
-
     height: 45px;
 
     display: grid;
 
     place-items: center;
 
-    background: var(--light-green);
+    background: var(--light-blue);
 
-    color: var(--green);
+    color: var(--blue);
 
     border-radius: 50%;
-
 }
-
 
 .contact-box h3 {
-
     font-size: 14px;
-
 }
 
-
 .contact-box p {
-
     color: var(--gray);
 
     font-size: 12px;
-
 }
 
-
 .contact-socials {
-
     display: flex;
 
     gap: 10px;
 
     margin-top: 30px;
-
 }
 
-
 .contact-socials a {
-
     width: 40px;
-
     height: 40px;
 
     border-radius: 50%;
@@ -1295,56 +967,44 @@ textarea {
 
     place-items: center;
 
-    color: var(--green);
+    color: var(--blue);
 
     background: white;
 
     border: 1px solid var(--border);
 
-    transition: .3s;
-
+    transition: 0.3s;
 }
-
 
 .contact-socials a:hover {
-
-    background: var(--green);
+    background: var(--blue);
 
     color: white;
-
 }
 
-
 .contact-form {
-
     display: flex;
 
     flex-direction: column;
 
     gap: 15px;
-
 }
 
-
 .form-row {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
     gap: 15px;
-
 }
-
 
 .contact-form input,
 .contact-form textarea {
-
     width: 100%;
 
     padding: 14px;
 
-    border: 1px solid var(--border);
+    border: 1px solid #ddd;
 
     border-radius: 5px;
 
@@ -1353,109 +1013,85 @@ textarea {
     outline: none;
 
     font-size: 13px;
-
 }
-
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-
-    border-color: var(--green);
-
+    border-color: var(--blue);
 }
-
 
 .contact-form textarea {
-
     resize: vertical;
-
 }
 
-
 #formMessage {
-
-    color: var(--green);
+    color: var(--blue);
 
     font-size: 12px;
-
 }
 
 
 /* =====================================================
-                    FOOTER
+   FOOTER
 ===================================================== */
 
 footer {
-
     text-align: center;
 
     padding: 40px;
 
-    background: #172017;
+    background: #040b10;
 
     color: white;
-
 }
 
-
 .footer-logo {
-
     font-size: 25px;
 
     font-weight: 800;
-
 }
 
+.footer-logo span {
+    color: var(--blue);
+}
 
 .footer-small {
-
-    color: #aeb8ab;
+    color: #aaa;
 
     font-size: 11px;
 
     margin-top: 5px;
-
 }
 
 
 /* =====================================================
-                    RESPONSIVE
+   RESPONSIVE
 ===================================================== */
 
 @media (max-width: 950px) {
 
     .navbar {
-
         gap: 15px;
-
     }
 
     .nav-link span {
-
         display: none;
-
     }
-
 }
 
 
 @media (max-width: 800px) {
 
     .menu-btn {
-
         display: block;
-
     }
 
-
     .navbar {
-
         display: none;
 
         position: absolute;
 
         top: 75px;
-
         left: 0;
 
         width: 100%;
@@ -1467,198 +1103,367 @@ footer {
         flex-direction: column;
 
         border-bottom: 1px solid var(--border);
-
     }
-
 
     .navbar.show {
-
         display: flex;
-
     }
-
 
     .nav-link span {
-
         display: inline;
-
     }
 
-
     .hero {
-
         grid-template-columns: 1fr;
 
         text-align: center;
 
         padding-top: 120px;
-
     }
-
 
     .hero-image {
-
         order: -1;
-
     }
-
 
     .hero-description {
-        
         margin: auto;
-    
-
     }
-
 
     .hero-buttons,
     .social-links {
-
         justify-content: center;
-
     }
-
 
     .about-container {
-
         grid-template-columns: 1fr;
-
     }
 
-
     .about-image {
-
         max-width: 350px;
 
         margin: auto;
-
     }
-
 
     .stats {
-
         grid-template-columns: 1fr 1fr;
-
     }
-
 
     .resume-container {
-
         grid-template-columns: 1fr;
-
     }
-
 
     .portfolio-grid {
-
         grid-template-columns: 1fr 1fr;
-
     }
-
 
     .services-grid {
-
         grid-template-columns: 1fr 1fr;
-
     }
-
 
     .contact-container {
-
         grid-template-columns: 1fr;
-
     }
-
 }
 
 
 @media (max-width: 550px) {
 
     .section {
-
         padding: 80px 6%;
-
     }
-
 
     .hero {
-
         padding-left: 6%;
-
         padding-right: 6%;
-
     }
-
 
     .hero h1 {
-
         font-size: 42px;
-
     }
-
 
     .hero-image {
-
         width: 300px;
-
         height: 380px;
-
     }
-
 
     .personal-info {
-
         grid-template-columns: 1fr;
-
     }
-
 
     .stats {
-
         grid-template-columns: 1fr;
-
     }
-
 
     .skills-container {
-
         grid-template-columns: 1fr;
-
     }
-
 
     .fun-skills {
-
         grid-template-columns: 1fr;
-
     }
-
 
     .portfolio-grid {
-
         grid-template-columns: 1fr;
-
     }
-
 
     .services-grid {
-
         grid-template-columns: 1fr;
-
     }
-
 
     .form-row {
-
         grid-template-columns: 1fr;
-
     }
-
 
     .floating-card {
-
         right: -5px;
-
     }
+}
+```
+
+### Your `script.js`
+
+Your JavaScript is basically fine. The live reference has navigation between **Home, About, Resume, Portfolio, Services, and Contact**, while your version adds Skills, so I would keep your Skills section rather than removing it.
+
+There is, however, one important improvement: your script can produce an error if an element isn't found. Use this safer version:
+
+```javascript
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+const menuBtn = document.getElementById("menuBtn");
+const navbar = document.getElementById("navbar");
+
+if (menuBtn && navbar) {
+
+    menuBtn.addEventListener("click", function () {
+
+        navbar.classList.toggle("show");
+
+    });
 
 }
+
+
+/* =====================================================
+   CLOSE MOBILE MENU
+===================================================== */
+
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        if (navbar) {
+            navbar.classList.remove("show");
+        }
+
+    });
+
+});
+
+
+/* =====================================================
+   TYPING EFFECT
+===================================================== */
+
+const typingElement =
+    document.querySelector(".typing");
+
+const words = [
+    "IT Student",
+    "Web Developer",
+    "UI Designer",
+    "Database Learner",
+    "Network Explorer"
+];
+
+let wordIndex = 0;
+let characterIndex = 0;
+let deleting = false;
+
+function typeEffect() {
+
+    if (!typingElement) {
+        return;
+    }
+
+    const currentWord = words[wordIndex];
+
+    if (!deleting) {
+
+        typingElement.textContent =
+            currentWord.substring(
+                0,
+                characterIndex + 1
+            );
+
+        characterIndex++;
+
+        if (characterIndex === currentWord.length) {
+
+            deleting = true;
+
+            setTimeout(typeEffect, 1500);
+
+            return;
+        }
+
+    } else {
+
+        typingElement.textContent =
+            currentWord.substring(
+                0,
+                characterIndex - 1
+            );
+
+        characterIndex--;
+
+        if (characterIndex === 0) {
+
+            deleting = false;
+
+            wordIndex++;
+
+            if (wordIndex === words.length) {
+                wordIndex = 0;
+            }
+
+        }
+    }
+
+    setTimeout(
+        typeEffect,
+        deleting ? 60 : 100
+    );
+}
+
+typeEffect();
+
+
+/* =====================================================
+   ACTIVE NAVIGATION
+===================================================== */
+
+const sections =
+    document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", function () {
+
+    let current = "";
+
+    sections.forEach(function (section) {
+
+        const sectionTop =
+            section.offsetTop - 150;
+
+        const sectionHeight =
+            section.offsetHeight;
+
+        if (
+            window.scrollY >= sectionTop &&
+            window.scrollY <
+            sectionTop + sectionHeight
+        ) {
+
+            current =
+                section.getAttribute("id");
+
+        }
+
+    });
+
+    navLinks.forEach(function (link) {
+
+        link.classList.remove("active");
+
+        if (
+            link.getAttribute("href") ===
+            "#" + current
+        ) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
+
+
+/* =====================================================
+   PORTFOLIO FILTER
+===================================================== */
+
+const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+const portfolioItems =
+    document.querySelectorAll(".portfolio-item");
+
+filterButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        filterButtons.forEach(function (btn) {
+
+            btn.classList.remove("active");
+
+        });
+
+        button.classList.add("active");
+
+        const filter =
+            button.getAttribute("data-filter");
+
+        portfolioItems.forEach(function (item) {
+
+            if (
+                filter === "all" ||
+                item.classList.contains(filter)
+            ) {
+
+                item.style.display = "";
+
+            } else {
+
+                item.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
+
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+const contactForm =
+    document.getElementById("contactForm");
+
+const formMessage =
+    document.getElementById("formMessage");
+
+if (contactForm && formMessage) {
+
+    contactForm.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+            formMessage.textContent =
+                "Message submitted successfully!";
+
+            contactForm.reset();
+
+        }
+    );
+
+}
+```
