@@ -13,14 +13,16 @@ html {
 }
 
 :root {
-    --green: #5DADE2;
-    --dark-green: #2E86C1;
-    --light-green: #EAF6FC;
-    --black: #172017;
-    --gray: #707870;
-    --white: #5DADE2;
-    --background: #087777;
-    --border: #5DADE2;
+    --green: #00BFFF;
+    --dark-green: #0077B6;
+    --light-green: #E6F9FF;
+
+    --black: #0B1F33;
+    --gray: #5B7083;
+    --white: #FFFFFF;
+
+    --background: #F4FCFF;
+    --border: #B8E9FA;
 }
 
 body {
