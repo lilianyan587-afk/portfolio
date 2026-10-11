@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lilian Aborita's personal portfolio">
+    <title>Lilian Aborita | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="topbar">
+        <a href="#home" class="logo">Portfolio<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME -->
+        <section class="hero section" id="home">
+            <div class="hero-content reveal">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>Hi, I'm <span>Lilian Aborita</span></h1>
+
+                <h2>I'm an <span class="typing-text">IT Student</span></h2>
+
+                <p class="hero-description">
+                    I am an Information Technology student who enjoys
+                    learning about web development, exploring new
+                    technologies, and creating useful digital experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="btn primary-btn">About Me</a>
+                    <a href="#contact" class="btn outline-btn">Contact Me</a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="status-dot"></span>
+                    Always learning. Always improving.
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="photo-glow"></div>
+
+                <div class="photo-frame">
+                    <img src="piksur.png"
+                         alt="Photo of Lilian Aborita"
+                         class="profile-photo"
+                         onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='flex';">
+
+                    <div class="photo-fallback" id="photoFallback">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Add your photo</span>
+                    </div>
+                </div>
+
+                <div class="photo-caption">
+                    <span class="caption-line"></span>
+                    <span>STUDENT · FUTURE IT PROFESSIONAL</span>
+                </div>
+
+                <!-- SOCIAL LINKS UNDER THE PHOTO -->
+                <div class="social-links">
+                    <a href="https://www.facebook.com/lilyansheeeyt/"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="Facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/taaam_le?xtok=MXg1bXpnbDlvcGxndg==/"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="Instagram" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/lilianyan587-afk/"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="GitHub" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-decoration decoration-one"></div>
+            <div class="hero-decoration decoration-two"></div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section content-section" id="about">
+            <div class="section-heading reveal">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About <span>Me</span></h2>
+                <p>A little introduction about myself.</p>
+            </div>
+
+            <div class="about-card reveal">
+                <div class="about-icon">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+
+                <div class="about-text">
+                    <h3>Hello, I'm Lilian!</h3>
+                    <p>
+                        I am a 20-year-old Information Technology student
+                        from Canapuan, Jaro, Leyte. I am interested in
+                        technology and enjoy improving my knowledge and
+                        skills through school activities and personal projects.
+                    </p>
+                    <p>
+                        My goal is to continue learning, gain practical
+                        experience, and develop websites and applications
+                        that can help solve real-world problems.
+                    </p>
+
+                    <div class="personal-details">
+                        <p><i class="fa-solid fa-location-dot"></i>
+                            <strong>Location:</strong> Jaro, Leyte</p>
+                        <p><i class="fa-solid fa-graduation-cap"></i>
+                            <strong>Field:</strong> Information Technology</p>
+                        <p><i class="fa-solid fa-laptop-code"></i>
+                            <strong>Interest:</strong> Web Development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section content-section" id="skills">
+            <div class="section-heading reveal">
+                <p class="eyebrow">WHAT I'M LEARNING</p>
+                <h2>My <span>Skills</span></h2>
+                <p>Technologies and skills I am developing.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card reveal">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Building the structure of web pages.</p>
+                </article>
+
+                <article class="skill-card reveal">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <p>Styling responsive and attractive websites.</p>
+                </article>
+
+                <article class="skill-card reveal">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Adding interaction and dynamic features.</p>
+                </article>
+
+                <article class="skill-card reveal">
+                    <i class="fa-brands fa-php"></i>
+                    <h3>PHP & MySQL</h3>
+                    <p>Learning server-side programming and databases.</p>
+                </article>
+
+                <article class="skill-card reveal">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>Git & GitHub</h3>
+                    <p>Managing code and collaborating on projects.</p>
+                </article>
+
+                <article class="skill-card reveal">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>Networking</h3>
+                    <p>Learning network setup and troubleshooting.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section content-section" id="projects">
+            <div class="section-heading reveal">
+                <p class="eyebrow">MY WORK</p>
+                <h2>My <span>Projects</span></h2>
+                <p>Some of the projects I have worked on or am developing.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card reveal">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <p class="project-label">WEB DEVELOPMENT</p>
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A personal website showcasing my background,
+                        skills, interests, and contact information.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <p class="project-label">DATABASE SYSTEM</p>
+                    <h3>Library Management System</h3>
+                    <p>
+                        A school project focused on organizing book
+                        records and managing borrowing information.
+                    </p>
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>CSS</span>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <p class="project-label">CAPSTONE PROJECT</p>
+                    <h3>INTRAK</h3>
+                    <p>
+                        A proposed mobile-based platform for coordinating
+                        and monitoring student internship progress.
+                    </p>
+                    <div class="project-tags">
+                        <span>Mobile</span>
+                        <span>Internship</span>
+                        <span>Tracking</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section content-section" id="contact">
+            <div class="section-heading reveal">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Contact <span>Me</span></h2>
+                <p>Feel free to reach out through my social platforms.</p>
+            </div>
+
+            <div class="contact-card reveal">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>lilianyan587@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-facebook"></i>
+                    <div>
+                        <h3>Facebook</h3>
+                        <a href="https://www.facebook.com/lilyansheeeyt/"
+                           target="_blank" rel="noopener noreferrer">
+                            Visit my profile
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/lilianyan587-afk"
+                           target="_blank" rel="noopener noreferrer">
+                            View my repositories
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#home" class="logo">Portfolio<span>.</span></a>
+        <p>Designed and developed by Lilian Aborita.</p>
+        <p class="copyright">
+            &copy; <span id="currentYear"></span> All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
